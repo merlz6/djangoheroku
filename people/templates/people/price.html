@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class='pricetickers'>
+    {% for key,value in price.items %}
+      <div class='tickers'>
+        <h5>{{key}} : </h5>
+        <h5> ${{value.USD}}</h5>
+        </div>
+    {% endfor %}
+      </div>
+  </body>
+</html>
